@@ -1,0 +1,15 @@
+{
+	margin:0;
+	padding:0;
+}
+html, body{
+	height:100%;
+	color:#000;
+	font-family: "Comic Sans MS", cursive;
+
+}
+body{
+	background-image:radial-gradient(#0F0 30%, #0F3 60%, #0F6 100%);
+		background-image:-moz-radial-gradient(#090 30%, #0F3 60%, #063 100%);
+			background-image:-webkit-radial-gradient(#090 30%, #0F3 60%, #063 100%);
+}
