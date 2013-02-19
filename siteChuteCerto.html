@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Chute Certo</title>
+<link rel="stylesheet" type="text/css" href="estilo/style.css">
+
+<script>
+function validarSenha(){
+	senha1 = document.f1.senha1.value
+	senha2 = document.f1.senha2.value
+
+	if (senha1 == senha2)
+		alert("SENHAS IGUAIS")
+	else
+		alert("SENHAS DIFERENTES")
+}
+</script>
+</head>
+
+<body>
+		<!---Pagina Principal--->
+<div id= "home" >
+			<h1>Home</h1>
+            <div class="conteudo">
+			<p>
+				O melhor site de bolão da UFPB
+			</p>
+  <p> 
+				Idealizado para a disciplina de Dispositivos móveis, ministrada pelo
+				professor Raoni Kulesza
+	</p>
+          </div>	</div>
+		<!---Fim da página principal-->
+        
+        <!---Logo centralizada-->
+        <div id="imagem">
+        <h2> <img src="imagens/2.jpg"/>  </h2>
+        <!-- Fim da logo centralizada
+
+		<!---Pagina Como Funciona-->
+		<div id= "comoFunciona" class="site" >
+			<h1>Como Funciona</h1>
+            <div class="conteudo">
+			<p>
+				Aqui deve estar as especificações de como funciona o bolão
+			</p>
+
+		</div>
+        </div>
+		<!---Fim da pagina Como Funciona-->
+
+		<!---Pagina Regulamento-->
+		<div id= "regulamento" class="site">
+			<h1>Regulamento</h1>
+            <div class="conteudo">
+			<p>
+				Aqui deve estar as especificações do regulamento
+			</p>
+
+		</div>
+        </div>
+        
+		<!---Fim da pagina Regulamento-->
+
+		<!---Pagina Login-->
+		<div id= "login" class="site">
+			<h1>Login</h1>
+            <div class="conteudo">
+			<br>
+           <br>
+          <form action="" name="f1">
+             Senha: <input type="password" name="senha1" size="20">
+               <br>
+            Confirmar Senha: <input type="password" name="senha2" size="20">
+<br>
+          <input type="button" value="Validar" onclick="validarSenha()" />
+          </form>
+
+
+		</div>
+        </div>
+		<!---Fim da pagina Login-->
+
+		<!---Pagina Cadastro-->
+		<div id= "facaSeuCadastro" class="site">
+
+			<h1>Faça Seu Cadastro</h1>
+			<div class="conteudo"
+			<!-- abre form -->
+<form action="#" method="post">
+  <fieldset>
+
+    <!-- abre #instrucoes_formulario -->
+
+    <aside id="instrucoes_formulario">
+      	<p class="erro">
+		Verifique os campos com asterisco e destaque vermelho.
+	</p>
+      <!-- <p>Preencha os campos obrigatórios (*).</p> -->
+    </aside>
+
+    <!-- fecha #instrucoes_formulario -->
+
+    <ol>
+      <li class="erro">
+        <label for="nome">* Nome</label> <input type="text" name="nome" id="nome" /> <em>Apenas letras</em>
+      </li>
+
+      <li class="erro">
+        <label for="senha">* Senha</label>
+        <input type="password" name="senha" id="senha" />
+        <em>Ex.: Asd@123</em>
+      </li>
+
+      <li>
+        <label for="email">* E-mail</label>
+        <input type="email" name="email" id="email" />
+        <em>exemplo@exemplo.com</em>
+      </li>
+
+      <li class="erro">
+        <label for="telefone">Telefone</label>
+        <input type="tel" name="telefone" id="telefone" />
+        <em>(xx) xxxx-xxxx</em>
+      </li>
+
+    </ol>
+    <button type="submit">Botão de enviar</button>
+  </fieldset>
+</form>
+<!-- fecha form -->
+		</div>
+        </div>
+		<!---Fim da pagina Cadastro-->
+
+	<div id="nav">
+    <h2><img src="imagens/3.png" /></h2>
+    <ul>
+    <li><a href="home">Home</a></li>	
+     <li><a href="comoFunciona">Como Funciona</a></li>
+      <li><a href="regulamento">Regulamento</a></li>
+       <li><a href="login">Login</a></li> 
+       <li><a href="facaSeuCadastro">Faça seu cadastro</a></li>
+     
+       <form action ="" method=""><input id= "serch" type="text" placeholder="Search"/></form>
+        </ul>
+       </nav>		
+ 	</body>
+ 
+</body>
+</html>
